@@ -1,0 +1,295 @@
+<!-- Done By Juan Alvarez, Jim White, Kenyon Bunker, Tony Moraes. -->
+
+<!DOCTYPE html>
+<!-- saved from url=(0100)https://content.byui.edu/file/5baa7973-1f47-4b74-bc67-7782514e10e4/1/Teach/213.03.TeachProblem.html# -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style> /* #0 */
+        body {
+            background-color: #0096ff;
+            color: white;
+        }
+
+        div {
+          margin: 10px;
+          padding: 10px;
+        }
+        .document {
+          width: 960px;
+          margin: 0 auto;
+          background: #58bdf5;
+          padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: 2px 2px #FF0000;
+        }
+
+        p {
+            font-family: Verdana;
+            font-size: 20px;
+        }
+
+        div.content {
+            display: flex;
+            display: -webkit-flex;
+        }
+
+        div#menuBar {
+            margin: 10px;
+            padding: 10px;
+            float: right;
+            position: relative;
+            min-width: 150px;
+            height: 100%;
+            background-color: #0096ff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #menuBar li {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background-color: #0000ff;
+            text-align: center;
+            justify-content: center;
+        }
+
+        #menuBar li:hover {
+            background-color: #fd2c2f;
+            font-size: 2em;
+        }
+
+        div#text {
+            order: 1;
+            -webkit-order: 1;
+        }
+
+        div#sidebar {
+          border: 10px solid red;
+          color: yellow;
+          order: 2;
+        }
+
+    </style>
+    <style> /* #1 */
+        body {
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            max-width: 400px;
+        }
+
+        p, h1, h3, li, div {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        h1 {
+            font-size: 24px;
+            letter-spacing: -3px;
+            font-family: times;
+            color: red;
+            background-color: darkgray;
+            margin-bottom: -10px;
+        }
+
+        h3 {
+            font-size: 14px;
+            letter-spacing: -2px;
+            font-family: verdana;
+            color: white;
+            background-color: black;
+        }
+
+        p, li, div {
+            font-size: 8px;
+            letter-spacing: -1px;
+            font-family: helvetica;
+            color: green;
+            background-color: yellow;
+        }
+
+        #title {
+            margin-top: -16px;
+        }
+
+        #menuBar, #text, #sidebar, #bottom {
+            margin-top: -10px;
+        }
+
+        #text h1 {
+            margin-top: -10px;
+        }
+
+        #sidebar h3 {
+            margin-top: -10px;
+            margin-bottom: -10px;
+        }
+
+        #bottom {
+            margin-top: -10px;
+        }
+    </style>
+    <style> /* #2 */
+        body {
+            background-color: lightcoral;
+        }
+
+        h1 {
+            color: aquamarine;
+            text-align: left;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        p {
+            font-family: "Times New Roman", Times, red-serifs;
+            font-size: 20px;
+            font-style: oblique;
+        }
+
+        li {
+            font-family: comic-sans;
+            font-size: 30px;
+            border-style: ridge;
+            background-color: yellow;
+            letter-spacing: 9px;
+        }
+
+        div.document {
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: column;
+        }
+
+        div#title {
+            order: 3;
+            -webkit-order: 3;
+        }
+
+        div.content {
+            order: 2;
+            -webkit-order: 2;
+        }
+
+        div#bottom {
+            order: 1;
+            -webkit-order: 1;
+        }
+    </style>
+    <style> /* #3 */
+        body {
+            background-color: lightgoldenrodyellow;
+        }
+
+        h1 {
+            color: palevioletred;
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;
+            border-style: dotted dashed solid double;
+        }
+
+        p {
+            font-family: fantasy;
+            font-size: 25px;
+        }
+
+        li {
+            font-family: comic-sans;
+            font-size: 30px;
+            border-style: double;
+        }
+
+        #menuBarList {
+            background-image: linear-gradient(to bottom, black,purple);
+        }
+
+        #title {
+            background-image: linear-gradient(to right, green, white, red);
+        }
+
+        #text {
+            background-image: linear-gradient(to bottom, darkblue, darkgray);
+        }
+
+        #sidebar {
+            background-image: linear-gradient(to right, orange, yellow);
+        }
+
+        #bottom {
+            background-image: linear-gradient(to bottom, brown, gold);
+        }
+    </style>
+
+    <title>Week 03 : CSS</title>
+  </head>
+  <body onload="disableStyles()" cz-shortcut-listen="true">
+      <div class="document">
+          <div id="title">
+              <h1>Week 03 : CSS</h1>
+              <p>This page will demonstrate how to switch between different CSS stylesheets to achieve a given effect</p>
+          </div> <!--title -->
+          <div class="content">
+              <div id="menuBar">
+                  <ul id="menuBarList">
+                      <li class="menuBarItem" onclick="applyStyle(0)">Stylesheet 1</li>
+                      <li class="menuBarItem" onclick="applyStyle(1)">Stylesheet 2</li>
+                      <li class="menuBarItem" onclick="applyStyle(2)">Stylesheet 3</li>
+                      <li class="menuBarItem" onclick="applyStyle(3)">Stylesheet 4</li>
+                      <li class="menuBarItem" onclick="disableStyles()">No Stylesheet</li>
+                  </ul>
+              </div> <!-- menuBar -->
+              <div id="text">
+                  <h1>Select the Stylesheet</h1>
+                  <p>
+                      There are four stylesheets that you may select from. Each one will change the coloring, fonts, and even the layout of the page.You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
+                      <a href="#" onclick="applyStyle(0)">Stylesheet 1</a>,
+                      <a href="#" onclick="applyStyle(1)">Stylesheet 2</a>,
+                      <a href="#" onclick="applyStyle(2)">Stylesheet 3</a>,
+                      <a href="#" onclick="applyStyle(3)">Stylesheet 4</a>.
+                  </p>
+                  <h1>Instructions</h1>
+                  <p>
+                      Juan and Jim Made the first version of the style #01. Tony Refactored the first style so it could be more alike for children with primary colors and a better reading.<br />
+                      Stylesheet two has so far been edited by Jim. Here there were some fun uses of the direction, unicode-bidi, and letter-spacing properties to have the text show up right-to-left aligned and spaced closer together so each character is touching the previous one.<br />
+                      Stylesheet three has so far been edited by Juan and Jim. We again used the display and order properties, but this time we showed the items in columns and specifically put the title at the bottom and the bottom at the top.<br />
+                      Stylesheet four has been edited by both Juan and Jim. The background-image property for linear gradients was used extensively to really change the appearance of this stylesheet.
+                  </p>
+              </div> <!-- text -->
+              <div id="sidebar">
+                  <h3>Grading</h3>
+                  <p>
+                      In order to get full credit for this assignment, you will need to demonstrate what you have learned and how you helped your classmates. This means your contribution needs to be briefly described on the page.
+                  </p>
+              </div> <!--sidebar -->
+          </div> <!-- content -->
+          <div id="bottom">Submit this assignment by uploading it to a page and sharing the link with the instructor</div>
+      </div> <!-- document -->
+
+      <script>
+          <!-- DISABLE STYLES: This function turns off the four stylesheets -->
+          function disableStyles()
+          {
+              document.styleSheets[0].disabled = true;
+              document.styleSheets[1].disabled = true;
+              document.styleSheets[2].disabled = true;
+              document.styleSheets[3].disabled = true;
+          }
+          <!-- APPLY STYLES: This function turns off all four stylesheets, then turns one back on -->
+          function applyStyle(i)
+          {
+              disableStyles();
+              document.styleSheets[i].disabled = false;
+          }
+      </script>
+  </body>
+</html>
